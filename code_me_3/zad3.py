@@ -8,8 +8,8 @@ style = int(input("Podaj ocenę języka książki (1-10): "))
 average = round((story + character + style) / 3, 2)
 
 if average >7:
-    print("Bardzo dobra ksiązka", average)
+    print("Bardzo dobra książka", average)
 elif average >= 4:
-    print("Ksiązka jest przeciętna", average)
+    print("Książka jest przeciętna", average)
 else:
-    print("Ksiązka niewarta uwagi", average)
+    print("Książka niewarta uwagi", average)

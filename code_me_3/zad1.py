@@ -4,6 +4,6 @@ num = int(input("Podaj liczbę: "))
 
 b = num % 3
 if b == 0:
-    print("Liczba podana przez Ciebie jest podzielna przez 3")
+    print("Liczba podana przez Ciebie jest podzielna przez 3.")
 else:
-    print("Liczba przez Ciebie podana NIE jest podzielna przez 3")
+    print("Liczba przez Ciebie podana NIE jest podzielna przez 3.")

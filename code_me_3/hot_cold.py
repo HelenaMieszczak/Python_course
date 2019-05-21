@@ -8,18 +8,25 @@
 import random
 
 comp_num = (random.randint(1,100))
-print(comp_num)
 
-users_num = int(input("Podaj swoją liczbę: "))
+
+users_num = int(input("Podaj swoją liczbę (1 - 100): "))
 counter = 1
+# jeśli podana liczba będzie za wysoko - program wyświetli napis "ciepło", jeśli za niska = "zimno".
 
-while users_num != comp_num:
-    counter += 1
-    if users_num > comp_num
+while comp_num != users_num:
+    if counter == 6:
+        print("PRZEGRANA :(")
+        break
+    elif users_num > comp_num:
+        print("ciepło")
+    elif users_num < comp_num:
         print("zimno")
-    elif use
-
     users_num = int(input("Podaj swoją liczbę: "))
+    counter += 1
 else:
-    print("You win")
+    print("GRATULACJE!!!")
+
+
+
 

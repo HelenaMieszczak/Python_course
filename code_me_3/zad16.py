@@ -7,6 +7,6 @@ secret_num = 10
 
 
 while users_num != secret_num:
-
-    users_num == secret_num
+    users_num =int(input("Zgadnij liczbę (1 - 20):"))
+else:
     print("Brawo!")

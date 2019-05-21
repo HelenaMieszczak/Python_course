@@ -5,5 +5,6 @@
 
 names = input("Podaj imiona: ")
 lista = names.split()
+
 for i in lista:
     print("Hello,", i)
