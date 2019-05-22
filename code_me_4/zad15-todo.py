@@ -14,7 +14,10 @@ denmark = ["Emma", "Sophie", "Ida", "Freja", "Clara", "Laura", "Anna", "Ella", "
 austria = ["Anna", "Sarah", "Lena", "Hannah", "Leonie", "Julia", "Sophie", "Laura", "Mary", "Lea"]
 
 all_names = england + france + germany + poland + spain + portugal + italy + greece + denmark + austria
-print(all_names)
-
+# print(all_names)
+a_new = []
 for i in all_names:
-    print(all_names.count(i), i)
+    if all_names.count(i) > 3:
+        a_new.append(all_names)
+        print(all_names.count(i), i)
+

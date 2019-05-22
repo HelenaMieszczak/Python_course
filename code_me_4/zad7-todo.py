@@ -11,21 +11,3 @@ new_numbers = []
 for i in range(0, len(numbers) +1):
     new_numbers.append(numbers[i : i + 4])
     print(new_numbers)
-# tablica = ['1234567890']
-# tablica2 =[]
-# for x in range(len(tablica[0])/2):
-#    tablica2.append(tablica[0][x*2:x*2+2])
-# tablica = [1234567890]
-# tablica_str = ' '.join(str(tablica[0])).split(' ')
-# tablica_int = []
-#
-# for x in range(len(tablica_str) / 2):
-#     tablica_int.append(int(''.join(tablica_str[x * 2:x * 2 + 2])))
-#
-# print
-# tablica_int
-# d = 11121314151617181910
-# d = str(d)
-# r = []
-# for c in range (0, len (d) -1, 2):
-# 	r.append (d[c:c+2])
