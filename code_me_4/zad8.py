@@ -1,16 +1,18 @@
-my_dict = {
-  'apple': 'jablko',
-  'ball': 'pilka',
-  'umbrella': 'parasolka'
-  }
-my_dict[5] = "wartość 5"
+# Utwórz listę zawierającą wartości słownika, bez duplikatów.
+#
+# >>> days = {'Jan': 31, 'Feb': 28, 'Mar': 31, 'Apr': 30, 'May': 31, 'Jun': 30, 'Jul': 31, 'Aug': 31, 'Sept': 30}
+
+days = {'Jan': 31, 'Feb': 28, 'Mar': 31, 'Apr': 30, 'May': 31, 'Jun': 30, 'Jul': 31, 'Aug': 31, 'Sept': 30}
+v_list = days.values()
+new_list = []
 
 
-print(my_dict)
+for v in v_list:
+    if v not in new_list:
+        new_list.append(v)
 
-#translations = {}.fromkeys("1", "2", "3"], "jabłko")
-#print(translations)
+print(new_list)
 
-print(my_dict.keys())
-print(my_dict.values())
-print
+
+
+

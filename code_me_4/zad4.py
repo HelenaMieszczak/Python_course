@@ -13,7 +13,7 @@
 #     ["Krystyna", "Janda", "aktorka"],
 # ]
 
-#definitions = ["Imię", "Nazwisko", "Zawód"
+
 
 people = []
 
@@ -23,8 +23,8 @@ for i in range(3):
     job = input("Podaj zawód: ")
     people.append([name, surname, job])
 
-print(people)
+#print(people)
 
 
-# for n in names:
-#     print("\t".join(n))
+for n in people:
+    print("\t".join(n))

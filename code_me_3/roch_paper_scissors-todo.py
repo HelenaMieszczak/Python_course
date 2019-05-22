@@ -17,17 +17,15 @@ print(comp_choice)
 comp_wins = []
 user_wins = []
 
-for i in range(rounds):
-    if comp_choice == users_choice:
-        print("Draw!")
-    elif ((comp_choice == "scissors" and users_choice == "paper") \
-        or (comp_choice == "paper" and users_choice == "rock") \
-        or (comp_choice == "rock" and users_choice == "scissors")):
-        print("You lost")
-        comp_wins += 1
-    else:
-        print("You win")
-        user_wins += 1
+if comp_choice == users_choice:
+    print("Draw!")
+elif ((comp_choice == "scissors" and users_choice == "paper") \
+    or (comp_choice == "paper" and users_choice == "rock") \
+    or (comp_choice == "rock" and users_choice == "scissors")):
+    print("You lost")
+else:
+    print("You win")
+
 
 
 
