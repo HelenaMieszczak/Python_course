@@ -3,7 +3,8 @@
 def sumowanie(lista):
     return sum(lista)
 
-list_num = input("Podaj dowolne liczb: ")
+
+list_num = input("Podaj dowolne liczby: ")
 list_num = list_num.split()
 print(list_num)
 

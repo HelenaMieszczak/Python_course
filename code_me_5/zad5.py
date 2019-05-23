@@ -1,21 +1,41 @@
-#  Nie korzystając z funkcji wbudowanej max(), napisz funkcję znajdującą maksymalną wartość z 3 liczb. maximum_of(a, b, c).
+# Skorzystaj ze swojego kodu bmi.py. Rozbij liczenie bmi na funkcję obliczającą bmi na podstawie danych użytkownika \
+# oraz zwracającą odpowiednią wartość (niedowaga, waga normalna, nadwaga, otyłość) w zależności od otrzymanego parametru.
 
-def max_of_2(x, y):
-    # if x > y:
-    #     return x
-    # else:
-    #     return y
-    return x if x > y else y
-
-def maximum_of(num1, num2, num3):
-    return max_of_2(max_of_2(num1, num2), num3)
-
-a = int(input("Podaj 1 l:"))
-b = int(input("Podaj 1 l:"))
-c = int(input("Podaj 1 l:"))
-
-wieksza = maximum_of(a, b, c)
-print("Największa podana liczba", wieksza)
+def niedowaga(BMI):
+    if BMI <= 18.4:
+        return True
+    else:
+        return False
 
 
+def waga_w_normie(BMI):
+    if BMI > 18.4 and BMI <= 24.99:
+        return True
+    else:
+        return False
 
+def nadwaga(BMI):
+    if BMI > 24.99 and BMI <= 30:
+        return True
+    else:
+        return False
+
+def otylosc(BMI):
+    if BMI > 24.99 and BMI <= 30:
+        return True
+    else:
+        return False
+
+weight = float(input("Podaj wagę (kg): "))
+height = float(input("Podaj wzrost (m): "))
+BMI = round(weight/(height**2),2)
+print("Twoje BMI wynosi: ", BMI)
+
+if niedowaga(BMI):
+    print("Niedowaga")
+elif waga_w_normie(BMI):
+    print("Waga w normie")
+elif nadwaga(BMI):
+    print("Nadwaga")
+elif otylosc(BMI):
+    print("Otylosc.")
