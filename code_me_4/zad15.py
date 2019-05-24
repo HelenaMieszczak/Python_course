@@ -1,5 +1,5 @@
-#Słowniki dla 10 krajów Europy utwórz listy 10 najpopularniejszych imion żeńskich. \
-#Za każdym razem zapisz imiona w wersji anglojęzycznej. Dodaj wszystki listy razem. Nowa lista powinna zawierać 100 elementów.
+# Słowniki dla 10 krajów Europy utwórz listy 10 najpopularniejszych imion żeńskich. \
+# Za każdym razem zapisz imiona w wersji anglojęzycznej. Dodaj wszystki listy razem. Nowa lista powinna zawierać 100 elementów.
 # Wyświetl tylko te imiona, które wystąpiły conajmniej w 3 krajach.
 
 england = ["Olivia", "Amelie", "Isla", "Ava", "Emily", "Isabella", "Mia", "Poppy", "Ella", "Lily"]
@@ -15,9 +15,14 @@ austria = ["Anna", "Sarah", "Lena", "Hannah", "Leonie", "Julia", "Sophie", "Laur
 
 all_names = england + france + germany + poland + spain + portugal + italy + greece + denmark + austria
 # print(all_names)
-a_new = []
+a_new = {}
 for i in all_names:
-    if all_names.count(i) > 3:
-        a_new.append(all_names)
-        print(all_names.count(i), i)
+    if i in a_new:
+        a_new[i] += 1
+    else:
+        a_new[i] = 1
+
+for k, v in a_new.items():
+    if v > 3:
+        print(k, ":", v)
 

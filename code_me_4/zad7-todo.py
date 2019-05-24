@@ -8,6 +8,9 @@
 numbers = [1, 2, 3, 4, 11, 12, 13, 14, 21, 22, 23, 24]
 new_numbers = []
 
-for i in range(0, len(numbers) +1):
-    new_numbers.append(numbers[i : i + 4])
-    print(new_numbers)
+for i in numbers:
+    new_numbers.append(len(numbers) // 3)
+
+print(new_numbers)
+
+

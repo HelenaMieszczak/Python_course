@@ -18,3 +18,21 @@
 #     line = i
 #     line += 1
 #         for
+
+
+row = 4
+col = 5
+tab_1 = [['*'] * col] * row
+print(tab_1)
+
+tab_2 = []
+
+for r in range(row):
+    current_row = []
+    for c in range(col):
+        current_row.append('*')
+    tab_2.append(current_row)
+
+print(tab_2)
+
+print(tab_1 == tab_2)

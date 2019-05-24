@@ -10,17 +10,24 @@
 # “Twój samochód (tutaj_marka) jest jeszcze zbyt młody.”
 # Gdy program będzie poprawnie działał, pozmieniaj wartości słownika (ale nie klucze!), aby zobaczyć, czy progam również zmienia swoje zachowanie.
 
-marka = input("Podaj markę auta: ")
-model = input("Podaj model auta:")
-rocznik = int(input("Podaj rocznik: "))
 
-def car_dict():
+def create_car():
     car = {}
-    car[marka] = marka
-    car[model] = model
-    car[rocznik] = rocznik
+    car["marka"] = brand
+    car["model"] = type
+    car["rocznik"] = year
     return car
 
-cars = car_dict()
 
+brand = input("Podaj markę auta: ")
+type = input("Podaj model auta: ")
+year = int(input("Podaj rocznik: "))
 
+cars_dict = create_car()
+
+print(cars_dict)
+
+if 2019 - year > 25:
+    print("Gratulacje! Twój samochod", brand, "możę być zarejestrowany jako zabytek.")
+else:
+    print("Twoj samochód", brand, "jest jeszcze zbyt młody." )
