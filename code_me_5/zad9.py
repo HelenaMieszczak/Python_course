@@ -2,9 +2,6 @@
 
 import random
 
-comp_num = (random.randint(1,100))
-users_num = int(input("Podaj swoją liczbę: "))
-counter = 1
 
 def users_win():
     if users_num == comp_num:
@@ -14,8 +11,16 @@ def users_win():
 
 
 def comp_win():
-    counter == 6 and comp_num != users_num
+    if (counter == 6) and (comp_num != users_num):
+        return True
+    else:
+        return False
 
+
+
+comp_num = (random.randint(1,100))
+users_num = int(input("Podaj swoją liczbę: "))
+counter = 1
 
 while comp_num != users_num:
     if users_num > comp_num:
@@ -31,3 +36,4 @@ if comp_win():
     print("Przegrana :(")
 else:
     print("Gratulacje")
+

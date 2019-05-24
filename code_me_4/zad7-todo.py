@@ -9,7 +9,7 @@ numbers = [1, 2, 3, 4, 11, 12, 13, 14, 21, 22, 23, 24]
 new_numbers = []
 
 for i in numbers:
-    new_numbers.append(len(numbers) // 3)
+    new_numbers.append(0 : len(numbers) // 3)
 
 print(new_numbers)
 
