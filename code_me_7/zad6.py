@@ -35,7 +35,7 @@ def is_american_express(number):
 
 
 def save_to_file(card_type, number):
-    save_file = card_type + "txt"
+    save_file = card_type + ".txt"
     with open(save_file, "a") as sf:
         sf.write(number + "\n")
 
