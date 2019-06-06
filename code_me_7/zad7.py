@@ -11,19 +11,16 @@ def get_word():
                 words = lines[0]
                 words = random.choice(words.split())
                 words = words.upper()
-                print(words)
                 chosen = True
             elif choose == "2":
                 words = lines[1]
                 words = random.choice(words.split())
                 words = words.upper()
-                print(words)
                 chosen = True
             elif choose == "3":
                 words = lines[2]
                 words = random.choice(words.split())
                 words = words.upper()
-                print(words)
                 chosen = True
             else:
                 print("Wrong input")
