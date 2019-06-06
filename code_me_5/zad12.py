@@ -40,7 +40,7 @@ number = input("Podaj numer karty: ")
 
 len_of_number = len(number)
 
-if len_of_number not in [13,15,16]:
+if len_of_number not in [13, 15, 16]:
     print("Błędny numer.")
 if is_visa(number):
     print("To visa.")
