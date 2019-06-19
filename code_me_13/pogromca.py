@@ -18,17 +18,19 @@ class Player(object):
             enemy.win()
 
 
-
 class Alien(object):
 
     def die(self):
-        print('Obcy z trudem łapie oddech, "To już koniec. Ale prawdziwie wielki koniec... \n',
-              'Walczyliśmy do końca. Nie, to nie koniec. Larwy moje jednoczcie się! \n',
-              'O tak one pomszczą mnie pewnego dnia... \n',
-              'Żegnaj, okrutny Wszechświecie! Umieeeraaam"')
+        print("Obcy z trudem łapie oddech, 'To już koniec. Ale prawdziwie wielki koniec... \n",
+              "Walczyliśmy do końca. Nie, to nie koniec. Larwy moje jednoczcie się! \n",
+              "O tak one pomszczą mnie pewnego dnia... \n",
+              "Żegnaj, okrutny Wszechświecie! Umieeeraaam")
 
     def win(self):
-        print("Obcy Cie zjadł")
+        print("Niestety po heroicznej walce przegrywasz.\n"
+              "I chociaż Obcy uznaje Cie za godnego i walecznego przeciwnika \n"
+              "nie udało się uratować Wszechświata przed inwazją. \n"
+              "Koniec ludzkości nadchodzi.")
 
 
 if __name__ == "__main__":
