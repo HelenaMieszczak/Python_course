@@ -14,19 +14,22 @@ for rycerz in rycerze:
 for rycerz in rycerze:
     rycerz.atakuj()
 
-print(rycerze)
+# print(rycerze)
 
 lucznicy = []
 
 for _ in range(3):
     lucznicy.append(Lucznik())
 
+for lucznik in lucznicy:
+    lucznik.atakuj()
+
 # print(lucznicy)
 
 armia = lucznicy + rycerze
-print(armia)
+# print(armia)
 
 for wojownik in armia:
-    wojownik.atakuj(strz)
+    wojownik.atakuj()
 
 print(armia)

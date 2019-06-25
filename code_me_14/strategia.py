@@ -9,9 +9,10 @@ def main():
     print(ryc)
     ryc.atakuj()
     print(ryc)
+
     luc = Lucznik()
     print(luc)
-    luc.atakuj(15)
+    luc.atakuj()
     print(luc)
 
 if __name__ == '__main__':
